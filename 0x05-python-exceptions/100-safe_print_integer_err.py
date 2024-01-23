@@ -4,7 +4,7 @@ import sys
         try:
             print("{}".format(value))
         except(ValueError, TypeError) as err:
-            print("Exception: {}".format(err), file = sys.stderr)
+            print("Exception: {}".format(err), file=sys.stderr)
             return False
         else:
             return True
