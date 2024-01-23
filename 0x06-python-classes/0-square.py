@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A model for square"""
+"""Get a model for Square"""
 class Square:
-    """Represent a square"""
+    """Rep a Square"""
     pass
