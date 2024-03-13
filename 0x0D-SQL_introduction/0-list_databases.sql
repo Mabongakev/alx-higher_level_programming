@@ -1,4 +1,2 @@
---To display all databases of a sql serve
-SHOW DATEBASES;
-
-#0
+--To display all databases of a MySQL server
+SHOW DATABASES;
