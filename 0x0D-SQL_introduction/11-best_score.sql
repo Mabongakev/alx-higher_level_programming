@@ -1,4 +1,2 @@
--- to update Bob's score to 10
-UPDATE 'second_table'
-SET 'score' = 10
-WHERE 'second_table' . 'name' = 'Bob';
+-- to select all scores above 10
+SELECT sore, name FROM second_table WHERE >= 10 ORDER BY score DESC;
