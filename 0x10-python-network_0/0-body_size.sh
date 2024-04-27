@@ -6,8 +6,5 @@ if [ $# -ne 1 ]; then
 	exit 1
 fi
 
-# Store the URL provided by the user
-url=$1
-
 # Send a GET request to the URL and store the response body
-echo $(curl -sI "$url" | grep "content-length" | cut -d ":" -f 2)
+echo $(curl -sI "$1" | grep "Content-Length" | cut -d ":" -f 2)
