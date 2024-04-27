@@ -10,11 +10,4 @@ fi
 url=$1
 
 # Send a GET request to the URL and store the response body
-body_size=$(curl -sI "$url" | grep -i "content-length" | awk '{print $2}' | tr -d '\r')
-
-# Check if Content-Length header is present in the response
-if [ -z "$body_size" ]; then
-	echo "Content-Length header not found in the response."
-    else
-	    echo "Body size of the response from $url: $body_size bytes"
-fi
+echo $(curl -sI "$url" | grep "content-length" | cut -d ":" -f 2)
