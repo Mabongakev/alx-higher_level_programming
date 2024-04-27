@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Display the body only of a 200 status code
-curl -sL "$1"
+curl -sX GET "$1" -L 200
